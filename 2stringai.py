@@ -1,5 +1,6 @@
 # print ("*********** Užduotis1 ************")
 #Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus (Jonas Jonaitis). Atspausdinti trumpesnį stringą.
+import re
 
 # name = "Johnny"
 # last_name = "Depp"
@@ -29,39 +30,42 @@
 #
 # print(var4.upper())
 
-# print ("*********** Užduotis5 ************")
-# # Sukurti kintamąjį su stringu: "An American in Paris". Jame vis`as “a” (didžiąsias ir mažąsias) pakeisti žvaigždutėm “*”.  Rezultatą atspausdinti.
-#
-#
-# var5 = "An American in Paris"
-# #var5 = var5.replace("a", "*").replace("A", "*")
-# print(var5.replace("a", "*").replace("A", "*"))
+print ("*********** Užduotis5 ************")
+# Sukurti kintamąjį su stringu: "An American in Paris". Jame vis`as “a” (didžiąsias ir mažąsias) pakeisti žvaigždutėm “*”.  Rezultatą atspausdinti.
 
-# print ("*********** Užduotis6 ************")
+# re.sub()
+var5 = "An American in Paris"
+
+
+
+#var5 = var5.replace("a", "*").replace("A", "*")
+print(var5.replace("a", "*").replace("A", "*"))
+
+print ("*********** Užduotis6 ************")
 # Sukurti kintamąjį su stringu: "An American in Paris". Jame ištrinti visas balses. Rezultatą atspausdinti. Kodą pakartoti su stringais: "Breakfast at Tiffany's", "2001: A Space Odyssey" ir "It's a Wonderful Life".
 
 
-# var6 = "Breakfast at Tiffany's"
-# var66 = "2001: A Space Odyssey"
-# var666 = "It's a Wonderful Life"
-#
-# vowels = "aeyuioAEYUIO"
-# result5 = "".join(ch for ch in var5 if ch not in vowels)
-# print(result5)
-# print("".join(ch for ch in var6 if ch not in vowels))
-# print("".join(ch for ch in var66 if ch not in vowels))
-# print("".join(ch for ch in var666 if ch not in vowels))
+var6 = "Breakfast at Tiffany's"
+var66 = "2001: A Space Odyssey"
+var666 = "It's a Wonderful Life"
 
-# print ("*********** Užduotis7 ************")
-#
-# import random
-#
-# starWars = "Star Wars: Episode " + (" " * random.randint(1, 9)) + str(random.randint(1, 7)) + " - A New Hope"
-# print(starWars)
-#
-# var7 = "".join(ch for ch in starWars if ch.isdigit())
-# print(var7)
-#
+vowels = "aeyuioAEYUIO"
+result5 = "".join(ch for ch in var5 if ch not in vowels)
+print(result5)
+print("".join(ch for ch in var6 if ch not in vowels))
+print("".join(ch for ch in var66 if ch not in vowels))
+print("".join(ch for ch in var666 if ch not in vowels))
+
+print ("*********** Užduotis7 ************")
+
+import random
+
+starWars = "Star Wars: Episode " + (" " * random.randint(1, 9)) + str(random.randint(1, 7)) + " - A New Hope"
+print(starWars)
+
+var7 = "".join(ch for ch in starWars if ch.isdigit())
+print(var7)
+
 # print("*********** Užduotis8 ************")
 #
 # var8 = starWars # "starWars"
